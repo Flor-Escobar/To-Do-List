@@ -3,25 +3,21 @@ let ul = document.querySelector("ul")
 let texto = document.querySelector("#text-input")
 
 const agregar = (event) => {
-    event.preventDefault()//Detiene el evento pir defecto en este caso el de "form" que hace que recargue la página, entonces ese evento lo previene.
-
-    //creación de li
+    event.preventDefault()
     let li = document.createElement("li")
     li.classList.add("list-unstyled")
     ul.appendChild(li)
-    //creación de div
     let div = document.createElement("div")
-    //agregar la clase
     div.classList.add("form-control")
-    //Creando el input
     let input = document.createElement("input")
-    input.disabled = true // Los input que se van creando están desactivados
-    input.value = texto.value//el input tiene el valor de lo que se agregó en el input principal
+    input.disabled = true 
+    input.value = texto.value
+    input.classList.add("rounded")
     let boton1 = document.createElement("button")
     boton1.classList.add("btn","btn-danger", "mx-2")
-    boton1.innerText = "Eliminar"
+    boton1.innerText = " ✖️ Eliminar"
     let boton2 = document.createElement("button")
-    boton2.innerText = "Completo"
+    boton2.innerText = " ✔️ Completo"
     boton2.classList.add("btn","btn-dark", "mx-2")
     li.appendChild(div)
     div.appendChild(input)
