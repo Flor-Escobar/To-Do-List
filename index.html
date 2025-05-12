@@ -21,9 +21,22 @@
           </div>
           <div class="card-body">
 
+            <div class="row my-4">
+              <div class="col-12 col-md-6 my-3 my-md-0">
+                <input type="text" class="form-control" placeholder="Buscar Tarea . . .">
+              </div>
+              <div class="col-12 col-md-6">
+                <select class="form-select" id="filtro" aria-label="Default select example">
+                  <option selected disabled>Selecciona una opción</option>
+                  <option value="Todos">Todos</option>
+                  <option value="Completado">Completado</option>
+                  <option value="Pendiente">Pendiente</option>
+                </select>
+              </div>
+            </div>
             <form class="mb-4">
               <div class="input-group">
-                <input type="text" class="form-control" id="text-input" placeholder="Escribe una tarea...">
+                <input type="text" class="form-control" id="text-input" placeholder="Escribe una tarea . . .">
                 <button class="btn btn-primary" type="button" id="btn-ag">Agregar</button>
 
                 <ul id="list" class="list-group">

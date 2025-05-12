@@ -17,4 +17,4 @@ Una aplicación web simple de lista de tareas (To-Do List) desarrollada con **HT
 - HTML5
 - CSS3
 - Bootstrap 5
-- JavaScript (Vanilla)
+- JavaScript
